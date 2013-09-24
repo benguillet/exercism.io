@@ -1,4 +1,4 @@
 exercism.io
 ===========
 
-exercism.io exercises
+My [exercism.io](http://exercism.io/) excercises.
