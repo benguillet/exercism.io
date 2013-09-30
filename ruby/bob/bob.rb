@@ -17,7 +17,7 @@ class Bob
   end
 
   def question?(string)
-    string.end_with? '?'
+    !string.nil? && (string.end_with? '?')
   end
 
   def nothing?(string)
