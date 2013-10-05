@@ -12,15 +12,15 @@ class Bob
   end
 
   private
-  def yelling?(string)
-    string == string.upcase unless nothing?(string)
+  def yelling?(sentence)
+    sentence == sentence.upcase unless nothing?(sentence)
   end
 
-  def question?(string)
-    !string.nil? && (string.end_with? '?')
+  def question?(sentence)
+    sentence.end_with?('?') unless nothing?(sentence)
   end
 
-  def nothing?(string)
-    string.nil? || string.strip.empty?
+  def nothing?(sentence)
+    sentence.nil? || sentence.strip.empty?
   end
 end
